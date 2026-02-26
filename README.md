@@ -1,5 +1,5 @@
 # Customer-Churn-Prediction
-# Business Problem
+##  Business Problem
 Customer churn significantly impacts revenue for subscription-based businesses. Acquiring new customers costs 5–7x more than retaining existing ones.
 This project builds a machine learning model to identify customers likely to churn, enabling proactive retention strategies and data-driven decision-making.
 
