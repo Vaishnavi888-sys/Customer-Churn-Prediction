@@ -43,7 +43,7 @@ This problem is framed as a supervised binary classification task.
 . Identified feature correlations
 . Evaluated patterns influencing churn behavior
  
- 3) Model Development
+3) Model Development
 . Implemented and compared:
     - Decision Tree Classifier
     - Random Forest Classifier
@@ -64,12 +64,12 @@ Performed GridSearchCV on Random Forest to improve generalization.
 . min_samples_split
 . min_samples_leaf
 . Best Parameters:
-{
+
   'max_depth': None,
   'min_samples_leaf': 1,
   'min_samples_split': 2,
   'n_estimators': 200
-}
+  ----------------------
 Best Cross-Validation Score:
 0.7552
 6) Final Model Performance
