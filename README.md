@@ -3,10 +3,10 @@
 Customer churn significantly impacts revenue for subscription-based businesses. Acquiring new customers costs 5–7x more than retaining existing ones.
 This project builds a machine learning model to identify customers likely to churn, enabling proactive retention strategies and data-driven decision-making.
 
-# Objective
+## Objective
 Develop and evaluate classification models to predict customer churn using structured customer data, and select the best-performing model through hyperparameter tuning and cross-validation.
 
-# Key Highlights
+## Key Highlights
 Built a complete end-to-end ML pipeline
 Compared multiple tree-based models
 Identified and addressed overfitting
@@ -14,14 +14,14 @@ Applied hyperparameter tuning using GridSearchCV
 Achieved 75.09% test accuracy
 Saved production-ready model using pickle
 
-# Tech Stack
+## Tech Stack
 Programming: Python
 Data Processing: Pandas, NumPy
 Visualization: Matplotlib, Seaborn
 Machine Learning: Scikit-learn
 Model Persistence: Pickle
 
-# Dataset Overview
+## Dataset Overview
 The dataset contains customer-level information including:
 Demographics
 Account tenure
@@ -30,7 +30,7 @@ Billing information
 Target variable: Churn (Yes/No)
 This problem is framed as a supervised binary classification task.
 
-# Machine Learning Workflow
+## Machine Learning Workflow
 1️) Data Preprocessing
 
 . Handled missing values
@@ -38,16 +38,16 @@ This problem is framed as a supervised binary classification task.
 . Removed irrelevant features
 . Prepared clean training dataset
 
-# Exploratory Data Analysis (EDA)
+2) Exploratory Data Analysis (EDA)
 . Analyzed churn distribution
 . Identified feature correlations
 . Evaluated patterns influencing churn behavior
  
- # Model Development
+ 3) Model Development
 . Implemented and compared:
     - Decision Tree Classifier
     - Random Forest Classifier
-# Model Performance Comparison
+4) Model Performance Comparison
 Model	Training Accuracy	Testing Accuracy
 Decision Tree	100%	70.75%
 Random Forest	100%	74.36%
@@ -55,10 +55,10 @@ Random Forest	100%	74.36%
 Both models showed signs of overfitting (perfect training accuracy).
 Random Forest demonstrated better generalization performance.
 
-# Hyperparameter Tuning
+5) Hyperparameter Tuning
 Performed GridSearchCV on Random Forest to improve generalization.
 
-# Tuned Parameters:
+### Tuned Parameters:
 . n_estimators
 . max_depth
 . min_samples_split
@@ -72,17 +72,17 @@ Performed GridSearchCV on Random Forest to improve generalization.
 }
 Best Cross-Validation Score:
 0.7552
-# Final Model Performance
+6) Final Model Performance
 Final Test Accuracy: 75.09%
 Improved generalization compared to base models
 Selected Random Forest as final production model
-# Model Deployment Readiness
+7) Model Deployment Readiness
 The trained model was serialized using Pickle:
 churn_model.pkl
 This enables:
 . Reuse without retraining
 . Integration into APIs or web applications
-# Deployment into production systems
+7) Deployment into production systems
  Project Structure
 Customer-Churn-Prediction/
 │
@@ -92,7 +92,7 @@ Customer-Churn-Prediction/
 ├── README.md
 └── .gitignore
 
-# Key Skills Demonstrated
+## Key Skills Demonstrated
 . Supervised Machine Learning
 . Model Evaluation & Overfitting Analysis
 . Cross-Validation
